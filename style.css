@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* O conteudo do body pega 100% da tela */
+    height: 100vh;
+    /* Para os elementos filhos não evadirem os pais */
+    box-sizing: border-box;
+    background-color: #F37820;
+    color: white;
+}
+
+.cadastro_tela {
+    margin: 100px;
+    padding-left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cadastro_form {
+    position: absolute;
+    z-index: 2;
+    width: 747px;
+    height: 900px;
+    background-color: white;
+    border-radius: 2%;
+}
+
+img {
+    position: relative;
+    z-index: 1;
+    left: 658px;
+    /* move o elemento 20px para a direita */
+}
+
+.titulo_form {
+    text-align: center;
+    margin: 33px;
+    color: var(--Neutras-Preto, #000);
+    font-family: Poppins;
+    font-size: 40px;
+}
+
+.form_campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo_input {
+    margin: 9px;
+    width: 656px;
+    height: 65px;
+    border-radius: 10px;
+    border: 0.5px solid #CACACA;
+    background: #FFFAF2;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 32px;
+}
+
+.campo_input:focus {
+    outline: none;
+    box-shadow: none;
+
+}
+
+.campo_input::placeholder {
+    color: #000;
+}
+
+.conteudo_envio{
+    display: flex;
+}
+
+.titulo_campos_uploads {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.informacoes_campos_uploads {
+    padding: 35px 43px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upload_identidade {
+    display: flex;
+    padding-left: 42px;
+    width: 321px;
+    height: 78px;
+    color: #000;
+}
+
+.upload_nuvem {
+    width: 54px;
+    height: 54px;
+    left: 0%;
+    padding-right: 12px;
+}
+
+.descricao_tipo_arquivo {
+    display: flex;
+    width: 120px;
+    flex-direction: column;
+}
+
+.descricao {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.tipo_arquivos {
+    color: #989692;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+label{
+    padding: 23px 0px 23px 12px;
+}
+
+span{
+    border: 2px solid #097E90;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #097E90;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+.texto_aviso{
+    color: #FF1E1E;
+    font-family: Poppins, sans-serif;
+    padding: 0px 0px 35px 46px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #f378206e;
+    background-color: #f378206e;
+}
+
+button:hover{
+    cursor: pointer;
+}
